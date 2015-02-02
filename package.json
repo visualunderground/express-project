@@ -1,6 +1,6 @@
 {
-  "name": "express-project",
-  "version": "0.0.0",
+  "name": "scaffold-express",
+  "version": "0.0.1",
   "private": true,
   "main": "app.js",
   "scripts": {
