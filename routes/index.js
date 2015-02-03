@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/test', function(req, res, next) {
-  res.render('test', { title: 'test' });
+router.get('/test-route', function(req, res, next) {
+  res.render('test-route', { title: 'Test: routes.js' });
 });
 
 module.exports = router;
