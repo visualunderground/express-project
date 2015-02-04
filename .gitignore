@@ -31,4 +31,4 @@ npm-debug.log
 
 # Removed compiled assets. Push to heroku using:
 # http://www.shanestillwell.com/2014/10/10/deploy-web-app-with-grunt-compiled-assets-to-heroku/
-public
+app/public
