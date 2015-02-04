@@ -1,9 +1,10 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #cccccc; }
   body h1 {
     text-decoration: underline;
-    color: #ff00c1; }
+    color: #c4c1f1; }
 
 a {
   color: #00b7af;
