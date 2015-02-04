@@ -1,9 +1,10 @@
 #!/bin/bash
 
-git checkout dist
+git checkout deploy
 git rebase master
 grunt build
-git add -f ./dist
-git commit -m 'Adding dist files'
-git push heroku dist:master --force
+git add .
+git add -f ./app/public
+git commit -m 'Adding public files'
+git push
 git checkout master
