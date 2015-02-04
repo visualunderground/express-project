@@ -1,15 +1,10 @@
 {
-  "name": "scaffold-express",
+  "name": "scaffold-express-src",
   "version": "0.0.1",
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "~4.11.1",
-    "hbs": "~2.8.0",
-    "serve-favicon": "~2.2.0"
+    "start": "node app/app.js"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

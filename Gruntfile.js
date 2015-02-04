@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         sass: {
           dev: {
             files: {
-              'public/stylesheets/app.css': 'src/scss/app.scss'
+              'app/public/stylesheets/app.css': 'src/scss/app.scss'
             },
             options: {
               //includePaths: ['path/to/included/files'],
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                     expand: true, // Enable dynamic expansion
                     cwd: 'src/images/', // Src matches are relative to this path
                     src: ['**/*.{png,jpg,jpeg,gif}'], // Actual patterns to match
-                    dest: 'public/images/' // Destination path prefix
+                    dest: 'app/public/images/' // Destination path prefix
                 }]
             }
         }
