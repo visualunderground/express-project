@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style media="screen">
+	ul.waist-list {
+	 margin-left: 2.5rem; }
+	 ul.waist-list li {
+	   margin: 1em 0 1em 0;
+	   padding: 0;
+	   list-style-type: none;}
+	   ul.waist-list li .icon.blue-tick-icon {
+	     position: absolute;
+	     margin-left: -1.6em;
+	     margin-top: 0.2em; }
+	</style>
+	<title></title>
+</head>
+<body>
+	<form action="details" class="application-form" id="application-form" method="get" name="application-form">
+		<input name="isa_provider" type="hidden" value="{{provider}}"> <input name="isa_reference" type="hidden" value="{{reference}}"> <input name="isa_transfer_type" type="hidden" value="{{transfer_type}}">
+		<div class="row white-bg">
+			<div class="column large-10 large-offset-1">
+				<h2>Transfer a Stocks and Shares ISA to HL</h2>
+				<h3 class="legend-esque">[What this can do for you - lede para?]</h3>
+        <ul class="waist-list">
+          <li><span class="icon blue-tick-icon"></span>[Full transfer]+[What to do if this doesn't meet your needs]</li>
+          <li><span class="icon blue-tick-icon"></span>[To HL]</li>
+          <li><span class="icon blue-tick-icon"></span>[How long to complete]</li>
+          <li><span class="icon blue-tick-icon"></span>[As much as you want - check with RC]</li>
+        </ul>
+        <h3 class="legend-esque">[What  you need to have]</h3>
+        <ul class="waist-list">
+          <li><span class="icon blue-tick-icon"></span>[Provider name]</li>
+          <li><span class="icon blue-tick-icon"></span>[Reference number]+[where to find]</li>
+        </ul>
+        <h3 class="legend-esque">[What you need to know]</h3>
+				<ul class="list-bullet">
+					<li>With HL you make your own investment decisions.</li>
+					<li>Unlike cash, all investments should be regarded as for the long term because they can go down in value as well as up, so you could get back less than you invested. Any yield is variable and not guaranteed.</li>
+					<li>
+						<strike>Nothing on the website should be regarded as personal advice so if you have any doubts as to the suitability of an investment for your personal circumstances please <a class="link-headline" href="https://www.hl.co.uk/contact-us"><strong>contact us</strong></a> for written advice.</strike>
+					</li>
+					<li>Remember tax rules can change and the reliefs depend on your personal circumstances.</li>
+					<li>
+						Before you transfer an ISA please understand the <a class="link-headline" href="https://www.hl.co.uk/important-investment-notes"><strong>risks</strong></a> and <a class="link-headline" href="https://www.hl.co.uk/__data/assets/pdf_file/0015/37122/Online-Ts-and-Cs.pdf"><strong>Terms &amp; Conditions (including tariff of charges)</strong></a> of your investment and the <a class="link-headline" href="https://www.hl.co.uk/__data/assets/pdf_file/0013/37120/Vantage_Key_Features.pdf"><strong>Key Features</strong></a> , including the specific risks of any fund you have chosen.
+					</li>
+					<li>By applying for our services you agree to be bound by our terms so it is important you understand these documents; please contact us if you have any queries.</li>
+					<li>Please ensure you won't lose any <strike>valuable guarantees or other</strike> benefits, or incur excessive exit fees by transferring.</li>
+					<li>ISAs can usually be transferred as stock (where you remain invested) or cash. When transferring as cash you are out of the market while the transfer takes place. This may work in your favour if the market falls, but if it rises you will not benefit from any growth while you hold cash.</li>
+				</ul>
+				<div class="divider"></div>
+			</div>
+			<div class="buttons">
+				<div class="row form-row">
+					<div class="column large-5 medium-6 small-4 large-offset-1 cancel">
+						&nbsp; <!--<a class="cancel" id="application-back-button" onclick="parent.history.back()">Cancel</a>-->
+					</div>
+					<div class="column large-5 medium-6 small-8 end continue">
+						<button class="submit" id="application-submit-button" type="submit">Start now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

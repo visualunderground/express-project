@@ -1,0 +1,48 @@
+<form action="success" method="get" class="application-form" id="application-form">
+  <input type="hidden" name="isa_provider" value="{{provider}}">
+  <input type="hidden" name="isa_reference" value="{{reference}}">
+  <input type="hidden" name="isa_transfer_type" value="{{transfer_type}}">
+  <div class="row white-bg">
+    <div class="column large-10 large-offset-1">
+      <h2>Check your details</h2>
+      <h3 class="legend-esque">Transfer details</h3>
+      <table>
+        <tr>
+          <th>ISA type</th>
+          <td>Stocks and Shares</td>
+        </tr>
+        <tr>
+          <th>Provider</th>
+          <td>{{provider}}</td>
+        </tr>
+        <tr>
+          <th>Account reference</th>
+          <td>{{reference}}</td>
+        </tr>
+        <tr>
+          <th>Transfer type</th>
+          <td>{{transfer_type}}</td>
+        </tr>
+      </table>
+      <div class="reading-width">
+        <h3>Before you request the transfer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin scelerisque erat, vitae dictum libero feugiat quis.</p>
+      </div>
+      <div class="divider"></div>
+    </div>
+    <div class="buttons">
+      <div class="row form-row">
+        <div class="column large-5 medium-6 small-4 large-offset-1 cancel"> &nbsp;
+          <a href="/details" onclick="
+            document.getElementById('application-form').action='/details';
+            document.getElementById('application-form').submit();
+            return false;
+            " class="cancel" id="application-back-button">Back</a>
+        </div>
+        <div class="column large-5 medium-6 small-8 end continue">
+          <button type="submit" class="submit" id="application-submit-button"> Continue </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

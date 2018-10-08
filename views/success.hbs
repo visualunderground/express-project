@@ -1,0 +1,43 @@
+<form action="details" method="get" class="application-form" id="application-form">
+<div class="row white-bg">
+  <div class="column large-10 large-offset-1">
+
+    <div class="success">
+      <div class="success__header">
+        <h2>Thank you</h2>
+        <h3>We have received your transfer request</h3>
+      </div>
+        <table>
+          <tr>
+            <th>Provider</th>
+            <td>{{provider}}</td>
+          </tr>
+          <tr>
+            <th>Account reference</th>
+            <td>{{reference}}</td>
+          </tr>
+          <tr>
+            <th>Transfer type</th>
+            <td>{{transfer_type}}</td>
+          </tr>
+        </table>
+    </div>
+    <p>We've received your transfer request and will contact you as soon as your funds have been received.</p>
+    <p>[We have sent an email to email@email.com]</p>
+    <h3>What happens next</h3>
+    <p>[Contact provider]</p>
+                        <div class="divider"></div>
+
+</div>
+<div class="buttons">
+  <div class="row form-row">
+    <div class="column large-5 medium-6 small-4 large-offset-1 cancel"> &nbsp;
+      <!--<a class="cancel" id="application-back-button" onclick="parent.history.back()">Cancel</a>-->
+    </div>
+    <div class="column large-5 medium-6 small-8 end continue">
+      <!--<button type="submit" class="submit" id="application-submit-button"> Continue </button>-->
+    </div>
+  </div>
+</div>
+</div>
+</form>

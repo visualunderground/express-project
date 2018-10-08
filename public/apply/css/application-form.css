@@ -1,0 +1,353 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+form.application-form label[disabled] {
+  color: #CCC; }
+
+form.application-form .small, form.application-form .column-input .input-tip, form.application-form .column-input .realtime-validation {
+  font-size: 0.75em;
+  line-height: 1.5em; }
+
+form.application-form .label-size {
+  font-size: 0.875em;
+  line-height: 1.5em; }
+
+form.application-form .form-intend, form.application-form .form-row, form.application-form .investment-header, form.application-form .related-form-row {
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
+
+form.application-form .white-bg {
+  padding-top: 3.5em;
+  padding-bottom: 2.5em; }
+
+form.application-form .grey-bg {
+  padding: 1.3em; }
+  form.application-form .grey-bg :last-child {
+    margin-bottom: 0; }
+
+form.application-form .bold-text {
+  font-weight: bold; }
+
+form.application-form .sub-text {
+  font-weight: normal;
+  color: #8a8a8a;
+  margin-top: -5px;
+  display: block;
+  font-size: 10pt; }
+
+form.application-form .default-form-inner-spacing, form.application-form .column-label, form.application-form .column-input.text-only, form.application-form .column-input.prepopulated {
+  padding-top: 0.6em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    form.application-form .default-form-inner-spacing, form.application-form .column-label, form.application-form .column-input.text-only, form.application-form .column-input.prepopulated {
+      padding-top: 0.8em; } }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    form.application-form .default-form-inner-spacing, form.application-form .column-label, form.application-form .column-input.text-only, form.application-form .column-input.prepopulated {
+      margin-bottom: 0.3em; } }
+
+form.application-form .normal-weight {
+  font-weight: normal !important; }
+
+form.application-form .mobile-small {
+  font-size: 110%;
+  padding-bottom: 0.2em; }
+
+form.application-form fieldset {
+  margin-bottom: 2.5em; }
+
+form.application-form legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 1.1em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px; }
+  form.application-form legend .icon {
+    float: right;
+    border-bottom: none; }
+
+form.application-form .divider {
+  width: 100%;
+  background-color: #f0f0f0;
+  margin-bottom: 30px;
+  height: 5px; }
+
+form.application-form .validation-message, form.application-form label.invalid, form.application-form label.error {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.4em; }
+  form.application-form .validation-message ul, form.application-form label.invalid ul, form.application-form label.error ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+@media screen and (min-width: 40em) {
+  form.application-form .amend-buttons {
+    position: absolute;
+    right: 0;
+    top: 60px; } }
+
+@media screen and (min-width: 40em) {
+  form.application-form .amend-buttons div {
+    float: right; } }
+
+form.application-form .form-row {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-right: 0; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    form.application-form .form-row {
+      margin-top: 1em;
+      margin-bottom: 1em; } }
+
+form.application-form .vmp-weight {
+  padding-left: 0.5em; }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  form.application-form .vmp-weight-small {
+    padding-left: 0.5em; } }
+
+form.application-form .investment-header {
+  background-color: #001e38;
+  height: 3em;
+  line-height: 3em;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 0; }
+
+form.application-form .form-investment-row {
+  padding: 1em 0 1em 0; }
+
+form.application-form .investment-button-row {
+  background-color: #F7F7F7;
+  border-top: 1px solid #E0DEDF;
+  border-bottom: 1px solid #E0DEDF;
+  min-height: 4.5em; }
+
+form.application-form .investment-dynamic-row {
+  border-top: 1px solid #E0DEDF;
+  padding: 1em 0 1em 0; }
+
+form.application-form .remove {
+  padding: 0; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    form.application-form .remove {
+      padding: 0.5em 0 0 0.5em; } }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  form.application-form .input-group {
+    margin-top: 1em; } }
+
+form.application-form .related-form-row {
+  margin-top: -2em;
+  margin-bottom: 2.5em;
+  margin-right: 0; }
+
+form.application-form .field-description {
+  padding-left: 2.5em;
+  margin-bottom: -1em; }
+
+form.application-form .button-row {
+  margin-top: -2.5em; }
+
+form.application-form label.invalid,
+form.application-form label.error {
+  color: #eb362d; }
+
+form.application-form .error-text {
+  color: #eb362d; }
+
+form.application-form .form-top-errors, form.application-form .server-side-errors {
+  margin-top: -0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+  display: none;
+  color: #eb362d;
+  background-color: #ffe8e6;
+  border: 1px solid #eb362d;
+  border-radius: 5px; }
+  form.application-form .form-top-errors p, form.application-form .server-side-errors p {
+    margin-top: 1em;
+    margin-bottom: 0.5em; }
+  form.application-form .form-top-errors ul, form.application-form .server-side-errors ul {
+    list-style-type: none;
+    margin: 0; }
+    form.application-form .form-top-errors ul li, form.application-form .server-side-errors ul li {
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+      margin-left: 0.5em;
+      padding-left: 1.5em;
+      color: #eb362d;
+      background-image: url("../img/icons/icon-invalid.png");
+      background-repeat: no-repeat;
+      background-position: left 6px; }
+      form.application-form .form-top-errors ul li label, form.application-form .server-side-errors ul li label {
+        display: inline;
+        font-size: 1em;
+        text-decoration: underline;
+        cursor: pointer;
+        color: #0039ac; }
+        form.application-form .form-top-errors ul li label:hover, form.application-form .server-side-errors ul li label:hover {
+          text-decoration: none; }
+
+form.application-form .column-label label {
+  display: inline;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #001e38; }
+
+form.application-form .column-label.two-lines {
+  padding-top: 0.3em; }
+
+form.application-form .column-label.single-option {
+  background-image: none;
+  margin-left: -3.2em; }
+
+form.application-form .related-form-row .column-label.two-lines {
+  padding-top: 1em; }
+
+form.application-form .related-form-row .column-label.single-option {
+  background-image: none;
+  margin-left: -3.2em; }
+
+form.application-form .investment-header .column-input {
+  color: white; }
+
+form.application-form .column-input {
+  color: #0a0a0a; }
+  form.application-form .column-input.prepopulated {
+    font-weight: bold; }
+    form.application-form .column-input.prepopulated a {
+      font-weight: normal;
+      margin-left: 0.5em;
+      font-size: 0.9em; }
+  form.application-form .column-input.radio {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+    form.application-form .column-input.radio label {
+      color: #001e38; }
+      form.application-form .column-input.radio label.two-lines {
+        line-height: 1.1em;
+        padding-bottom: 1.2em; }
+      form.application-form .column-input.radio label.single-option {
+        background-image: none;
+        margin-left: -3.2em; }
+    form.application-form .column-input.radio .note {
+      margin-left: 3.7em;
+      margin-top: -1em;
+      font-size: 0.8em;
+      font-weight: bold;
+      color: #4a4a4a; }
+  form.application-form .column-input input,
+  form.application-form .column-input select,
+  form.application-form .column-input textarea {
+    margin-bottom: 0; }
+  form.application-form .column-input select,
+  form.application-form .column-input label {
+    cursor: pointer; }
+  form.application-form .column-input .input-tip, form.application-form .column-input .realtime-validation {
+    margin-top: 0.5em;
+    margin-bottom: 0; }
+  form.application-form .column-input .realtime-validation .prefix,
+  form.application-form .column-input .realtime-validation .length,
+  form.application-form .column-input .realtime-validation .numbers,
+  form.application-form .column-input .realtime-validation .letters {
+    float: left;
+    margin-right: 1em; }
+    form.application-form .column-input .realtime-validation .prefix .icon,
+    form.application-form .column-input .realtime-validation .length .icon,
+    form.application-form .column-input .realtime-validation .numbers .icon,
+    form.application-form .column-input .realtime-validation .letters .icon {
+      float: right;
+      margin-top: -0.1em;
+      margin-left: 0.3em; }
+  form.application-form .column-input .ccv2 {
+    width: 110px;
+    height: 53px;
+    margin-top: -5px;
+    margin-left: -20px;
+    background-image: url("../apply/img/application-sprite.png");
+    background-position: 10px -261px; }
+
+form.application-form .buttons .continue {
+  text-align: right; }
+  form.application-form .buttons .continue button.submit {
+    margin-left: 1em; }
+
+form.application-form .buttons .continue-complete button.submit {
+  margin-right: -1.4em; }
+
+form.application-form .buttons .pad-left {
+  padding-left: 1em !important; }
+
+form.application-form .address-display {
+  padding: 1em 2em 1em 1em;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #229418;
+  border-radius: 5px;
+  background: url("../img/icons/icon-valid-spacer.png") no-repeat right 1em; }
+
+form.application-form .readonly-row {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
+
+form.application-form .top {
+  margin-top: 2.5em; }
+
+form.application-form .bottom {
+  margin-bottom: 2.5em; }
+
+form.application-form #personal-details {
+  position: relative; }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  form.application-form #form_postcode {
+    margin-bottom: 1em; } }
+
+form.application-form #form_security_code {
+  width: 155px; }
+
+form.application-form #card_security_code input {
+  width: 93px; }
+
+form.application-form .table-errors td {
+  padding: 0.5em 1em; }
+  form.application-form .table-errors td label {
+    margin: 0; }
+
+form.application-form #cash-hub-input {
+  width: 25%; }
+
+form.application-form #cash-hub-last-cell {
+  width: 1em; }
+
+#application-form .table-errors {
+  background: #ffe8e6; }
+
+#ccv2-container {
+  margin-left: 185px;
+  float: inherit; }
+
+#ccv2-container-topup {
+  margin-left: 130px;
+  float: inherit; }
+
+#change-name {
+  margin-top: 5px; }
+  #change-name a {
+    text-decoration: none; }
+    #change-name a:hover {
+      text-decoration: underline; }

@@ -1,0 +1,68 @@
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.legend-esque{
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 1.1em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px; }
+
+ul+h3{
+  margin-top:40px;
+}
+
+.reading-width {
+  max-width: 38em;;
+}
+table{width: 100%; border: none; margin-bottom: 40px;}
+  tbody th {
+    text-align: left;
+    width: 40%;
+    padding: 15px;
+  }
+  tbody{
+    border: none;
+  }
+  tbody tr {
+    background-color: transparent!important;
+    border-bottom: 1px solid #ccc;
+  }
+  tbody td{
+    padding-left: 0;
+  }
+
+.notice-box {
+  color: #666;
+  margin-bottom: 0.6em!important;
+  display: block;
+}
+
+.column-input, .column-label {
+  float:left!important;
+}
+
+.success {
+  border: 1px solid green;
+}
+
+.list-bullet {
+  list-style: none; /* Remove default bullets */
+}
+.list-bullet li{
+  margin: 1em 0 1em 0;
+}
+
+.list-bullet li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #00adef; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+}

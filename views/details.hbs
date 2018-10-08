@@ -1,0 +1,350 @@
+<form action="/summary" method="get" class="application-form" id="application-form">
+	<div class="row white-bg">
+    <div class="column large-10 large-offset-1">
+			<h2>Transfer details</h2>
+      <div class="row form-row form-top-errors">
+				<div class="column large-12 medium-12 small-12">
+					<p> <strong>Sorry, but some of the form is incomplete</strong> - Please review the following points: </p>
+					<ul id="server-error"></ul>
+					<ul id="client-error"> </ul>
+				</div>
+			</div>
+      <fieldset>
+				<legend>Your Stocks and Shares ISA</legend>
+				<div class="row form-row">
+					<div class="column column-label large-3 medium-3">
+						<label for="isa_provider" class="required">Provider</label>
+					</div>
+					<div class="column column-input large-9 medium-9">
+						<select name="isa_provider" id="isa_provider" required="required" onchange="providerHint(this);">
+							<option value="">Select your provider...</option>
+							<option value="AA Saving">AA Saving</option>
+							<option value="AFH Independent Financial Services">AFH Independent Financial Services</option>
+							<option value="AJ Bell Trustees">AJ Bell Trustees</option>
+							<option value="AXA">AXA</option>
+							<option value="Aberdeen">Aberdeen</option>
+							<option value="Aegon Life">Aegon Life</option>
+							<option value="Aegon Scottish Equitable">Aegon Scottish Equitable</option>
+							<option value="Albert E Sharp">Albert E Sharp</option>
+							<option value="Alliance Trust">Alliance Trust</option>
+							<option value="Allianz Global Investors">Allianz Global Investors</option>
+							<option value="Amber Financial Investments Limited">Amber Financial Investments Limited</option>
+							<option value="Architas Multi-Manager Limited">Architas Multi-Manager Limited</option>
+							<option value="Argonaut Capital Partners">Argonaut Capital Partners</option>
+							<option value="Artemis">Artemis</option>
+							<option value="Ascentric (Investment Funds Direct Ltd)">Ascentric (Investment Funds Direct Ltd)</option>
+							<option value="Ashcourt Asset Managment">Ashcourt Asset Managment</option>
+							<option value="Avalon">Avalon</option>
+							<option value="Aviva Investors">Aviva Investors</option>
+							<option value="Aviva Wrap">Aviva Wrap</option>
+							<option value="Axa Elevate">Axa Elevate</option>
+							<option value="Baillie Gifford">Baillie Gifford</option>
+							<option value="Bank of Scotland">Bank of Scotland</option>
+							<option value="Barclays Bank">Barclays Bank</option>
+							<option value="Barclays Direct Investing">Barclays Direct Investing</option>
+							<option value="Barclays Open Invest">Barclays Open Invest</option>
+							<option value="Barclays Private Banking">Barclays Private Banking</option>
+							<option value="Barclays Smart Investor">Barclays Smart Investor</option>
+							<option value="Barclays Stockbrokers Ltd">Barclays Stockbrokers Ltd</option>
+							<option value="Barclays Wealth">Barclays Wealth</option>
+							<option value="Barings">Barings</option>
+							<option value="Barratt &amp; Cooke">Barratt &amp; Cooke</option>
+							<option value="Beaufort Securities Ltd">Beaufort Securities Ltd</option>
+							<option value="Bestinvest">Bestinvest</option>
+							<option value="Bestinvest Select Platform">Bestinvest Select Platform</option>
+							<option value="BlackRock">BlackRock</option>
+							<option value="Blankstone Sington">Blankstone Sington</option>
+							<option value="BoulterBowen WealthCare">BoulterBowen WealthCare</option>
+							<option value="Brewin Dolphin">Brewin Dolphin</option>
+							<option value="Britannia Building Society">Britannia Building Society</option>
+							<option value="Brown Shipley">Brown Shipley</option>
+							<option value="CRUX Asset Management">CRUX Asset Management</option>
+							<option value="Canaccord Financial">Canaccord Financial</option>
+							<option value="Capita Financial Managers">Capita Financial Managers</option>
+							<option value="Cavendish">Cavendish</option>
+							<option value="Cazenove Capital Management">Cazenove Capital Management</option>
+							<option value="Charles Stanley Stockbrokers">Charles Stanley Stockbrokers</option>
+							<option value="Chartwell Asset Management">Chartwell Asset Management</option>
+							<option value="Cheviot">Cheviot</option>
+							<option value="Citibank">Citibank</option>
+							<option value="City Financial Investment Funds">City Financial Investment Funds</option>
+							<option value="Close Asset Management (UK) Limited">Close Asset Management (UK) Limited</option>
+							<option value="Close Wealth Management">Close Wealth Management</option>
+							<option value="Co Funds">Co Funds</option>
+							<option value="Columbia Threadneedle Investments">Columbia Threadneedle Investments</option>
+							<option value="Computershare">Computershare</option>
+							<option value="Consistent">Consistent</option>
+							<option value="Coutts">Coutts</option>
+							<option value="Credo Capital Plc">Credo Capital Plc</option>
+							<option value="Cunningham Coates">Cunningham Coates</option>
+							<option value="David Booler &amp; Co">David Booler &amp; Co</option>
+							<option value="Deutsche Bank Private Wealth Management">Deutsche Bank Private Wealth Management</option>
+							<option value="Dowgate Capital Stockbrokers">Dowgate Capital Stockbrokers</option>
+							<option value="Duncan Lawrie">Duncan Lawrie</option>
+							<option value="EQ Investors">EQ Investors</option>
+							<option value="EdenTree">EdenTree</option>
+							<option value="Epoch Wealth Management">Epoch Wealth Management</option>
+							<option value="Equiniti">Equiniti</option>
+							<option value="Equiniti Shareview">Equiniti Shareview</option>
+							<option value="F&amp;C">F&amp;C</option>
+							<option value="FXCM">FXCM</option>
+							<option value="Fairstone Private Wealth Ltd">Fairstone Private Wealth Ltd</option>
+							<option value="Family Investments">Family Investments</option>
+							<option value="Farley &amp; Thompson">Farley &amp; Thompson</option>
+							<option value="Fidelity">Fidelity</option>
+							<option value="First Direct">First Direct</option>
+							<option value="First State Investments">First State Investments</option>
+							<option value="Fisher Investments">Fisher Investments</option>
+							<option value="Fiske &amp; Co Ltd">Fiske &amp; Co Ltd</option>
+							<option value="Franklin Templeton">Franklin Templeton</option>
+							<option value="Funds Direct">Funds Direct</option>
+							<option value="Fundsmith">Fundsmith</option>
+							<option value="Fusion Wealth">Fusion Wealth</option>
+							<option value="Gerrard">Gerrard</option>
+							<option value="Gore Brown">Gore Brown</option>
+							<option value="Graham Corry Cheevers">Graham Corry Cheevers</option>
+							<option value="HB Markets">HB Markets</option>
+							<option value="HFM Columbus Group">HFM Columbus Group</option>
+							<option value="HSBC Global Asset Management (UK) Ltd">HSBC Global Asset Management (UK) Ltd</option>
+							<option value="Halifax">Halifax</option>
+							<option value="Harris Allday">Harris Allday</option>
+							<option value="Hedley &amp; Co">Hedley &amp; Co</option>
+							<option value="Henderson Rowe">Henderson Rowe</option>
+							<option value="Holden &amp; Partners">Holden &amp; Partners</option>
+							<option value="Hurley Trustee Services Ltd">Hurley Trustee Services Ltd</option>
+							<option value="IFDS">IFDS</option>
+							<option value="IFSL">IFSL</option>
+							<option value="IWeb">IWeb</option>
+							<option value="Ignis Asset Management">Ignis Asset Management</option>
+							<option value="Insight">Insight</option>
+							<option value="Intelligent Money">Intelligent Money</option>
+							<option value="Interactive Investor Services">Interactive Investor Services</option>
+							<option value="Invesco">Invesco</option>
+							<option value="Investec Asset Management">Investec Asset Management</option>
+							<option value="Investec Wealth Management">Investec Wealth Management</option>
+							<option value="Irish Life">Irish Life</option>
+							<option value="J M Finn &amp; Co">J M Finn &amp; Co</option>
+							<option value="JO Hambro Capital Management">JO Hambro Capital Management</option>
+							<option value="JPMorgan Asset Management">JPMorgan Asset Management</option>
+							<option value="James Brearley">James Brearley</option>
+							<option value="James Sharp &amp; Co">James Sharp &amp; Co</option>
+							<option value="Janus Henderson">Janus Henderson</option>
+							<option value="Jarvis">Jarvis</option>
+							<option value="Julius Baer">Julius Baer</option>
+							<option value="Jupiter">Jupiter</option>
+							<option value="Kames Capital">Kames Capital</option>
+							<option value="Killik &amp; Co">Killik &amp; Co</option>
+							<option value="Kleinwort Benson">Kleinwort Benson</option>
+							<option value="LJ Athene Investment Advisors">LJ Athene Investment Advisors</option>
+							<option value="Lazard Fund Managers Limited">Lazard Fund Managers Limited</option>
+							<option value="Leeds Building Society">Leeds Building Society</option>
+							<option value="Legal &amp; General">Legal &amp; General</option>
+							<option value="Legg Mason">Legg Mason</option>
+							<option value="Liontrust">Liontrust</option>
+							<option value="Lloyds">Lloyds</option>
+							<option value="Lloyds Bank Private Banking">Lloyds Bank Private Banking</option>
+							<option value="Lloyds Registrars Ltd">Lloyds Registrars Ltd</option>
+							<option value="M&amp;G">M&amp;G</option>
+							<option value="Majedie Asset Management">Majedie Asset Management</option>
+							<option value="Man GLG">Man GLG</option>
+							<option value="Manek">Manek</option>
+							<option value="Margetts Fund Management">Margetts Fund Management</option>
+							<option value="Marks &amp; Spencer Money">Marks &amp; Spencer Money</option>
+							<option value="Marlborough">Marlborough</option>
+							<option value="Mattioli Woods">Mattioli Woods</option>
+							<option value="McInroy &amp; Wood">McInroy &amp; Wood</option>
+							<option value="Merchant Capital">Merchant Capital</option>
+							<option value="Merrill Lynch Int. Private Banking">Merrill Lynch Int. Private Banking</option>
+							<option value="Meteor Asset Management">Meteor Asset Management</option>
+							<option value="Morgan Stanley Investment Management">Morgan Stanley Investment Management</option>
+							<option value="MyM&amp;G">MyM&amp;G</option>
+							<option value="NFU">NFU</option>
+							<option value="NatWest">NatWest</option>
+							<option value="National Friendly">National Friendly</option>
+							<option value="National Savings">National Savings</option>
+							<option value="Neptune">Neptune</option>
+							<option value="Newton (BNY Mellon)">Newton (BNY Mellon)</option>
+							<option value="Norwich &amp; Peterborough">Norwich &amp; Peterborough</option>
+							<option value="Novia">Novia</option>
+							<option value="Nucleus">Nucleus</option>
+							<option value="Nutmeg Saving &amp; Investment Limited">Nutmeg Saving &amp; Investment Limited</option>
+							<option value="Odey">Odey</option>
+							<option value="Old Mutual Wealth">Old Mutual Wealth</option>
+							<option value="Parmenion">Parmenion</option>
+							<option value="Pershing Securities Limited">Pershing Securities Limited</option>
+							<option value="Phillip Capital UK Limited">Phillip Capital UK Limited</option>
+							<option value="Phoenix Fund Services">Phoenix Fund Services</option>
+							<option value="Pilling &amp; Co">Pilling &amp; Co</option>
+							<option value="Premier">Premier</option>
+							<option value="Prudential">Prudential</option>
+							<option value="Quilter">Quilter</option>
+							<option value="RIT Capital Partners Savings Scheme">RIT Capital Partners Savings Scheme</option>
+							<option value="RLUM (CIS) Ltd">RLUM (CIS) Ltd</option>
+							<option value="Rathbone Unit Trust Management">Rathbone Unit Trust Management</option>
+							<option value="Rathbones Investment Management">Rathbones Investment Management</option>
+							<option value="Raymond James Investment Services">Raymond James Investment Services</option>
+							<option value="Redmayne Bentley">Redmayne Bentley</option>
+							<option value="Reyker Securities plc">Reyker Securities plc</option>
+							<option value="River &amp; Mercantile">River &amp; Mercantile</option>
+							<option value="Rossie House Investment Management">Rossie House Investment Management</option>
+							<option value="Rowan Dartington &amp; Co Ltd">Rowan Dartington &amp; Co Ltd</option>
+							<option value="Royal Bank of Scotland">Royal Bank of Scotland</option>
+							<option value="Royal London">Royal London</option>
+							<option value="SIT Savings Ltd">SIT Savings Ltd</option>
+							<option value="SVM">SVM</option>
+							<option value="SWIP">SWIP</option>
+							<option value="Sanlam">Sanlam</option>
+							<option value="Sanlam Private Investments (UK) Ltd">Sanlam Private Investments (UK) Ltd</option>
+							<option value="Santander">Santander</option>
+							<option value="Santander Share Dealing">Santander Share Dealing</option>
+							<option value="Sarasin &amp; Partners">Sarasin &amp; Partners</option>
+							<option value="Saunderson House Limited">Saunderson House Limited</option>
+							<option value="Schroders">Schroders</option>
+							<option value="Scottish Friendly">Scottish Friendly</option>
+							<option value="Scottish Investment Trust">Scottish Investment Trust</option>
+							<option value="Scottish Widows">Scottish Widows</option>
+							<option value="Selftrade">Selftrade</option>
+							<option value="Share Centre">Share Centre</option>
+							<option value="Shepherds Friendly">Shepherds Friendly</option>
+							<option value="Shore Capital Stockbrokers">Shore Capital Stockbrokers</option>
+							<option value="Sippdeal">Sippdeal</option>
+							<option value="Skandia Investment Management">Skandia Investment Management</option>
+							<option value="Skandia Investment Solutions (formerly Selestia)">Skandia Investment Solutions (formerly Selestia)</option>
+							<option value="Smith &amp; Williamson">Smith &amp; Williamson</option>
+							<option value="Speirs &amp; Jeffrey Ltd">Speirs &amp; Jeffrey Ltd</option>
+							<option value="St Johns Asset Management">St Johns Asset Management</option>
+							<option value="St. James's Place">St. James's Place</option>
+							<option value="Standard Life Fundzone">Standard Life Fundzone</option>
+							<option value="Standard Life Investments">Standard Life Investments</option>
+							<option value="Standard Life Self Investor">Standard Life Self Investor</option>
+							<option value="Standard Life Wealth">Standard Life Wealth</option>
+							<option value="Standard Life Wrap">Standard Life Wrap</option>
+							<option value="Sterling">Sterling</option>
+							<option value="Stocktrade">Stocktrade</option>
+							<option value="TD Waterhouse">TD Waterhouse</option>
+							<option value="Thames River Multi-Capital LLP">Thames River Multi-Capital LLP</option>
+							<option value="Thomas Grant &amp; Co ltd">Thomas Grant &amp; Co ltd</option>
+							<option value="Tilney">Tilney</option>
+							<option value="Tilney Asset Management (IG)">Tilney Asset Management (IG)</option>
+							<option value="Tilney Asset Management (TM)">Tilney Asset Management (TM)</option>
+							<option value="Tilney Investment Management (BI)">Tilney Investment Management (BI)</option>
+							<option value="Towry">Towry</option>
+							<option value="Transact">Transact</option>
+							<option value="Troy Asset Management">Troy Asset Management</option>
+							<option value="True Potential">True Potential</option>
+							<option value="UBS">UBS</option>
+							<option value="Unicorn">Unicorn</option>
+							<option value="VWM Wealth">VWM Wealth</option>
+							<option value="Vanguard">Vanguard</option>
+							<option value="Vanguard UK Nominees Ltd">Vanguard UK Nominees Ltd</option>
+							<option value="Virgin Direct">Virgin Direct</option>
+							<option value="Virgin Money">Virgin Money</option>
+							<option value="W H Ireland">W H Ireland</option>
+							<option value="Walker Crips Asset Managers">Walker Crips Asset Managers</option>
+							<option value="Way Fund Managers">Way Fund Managers</option>
+							<option value="Wesleyan">Wesleyan</option>
+							<option value="Whitechurch">Whitechurch</option>
+							<option value="Wise Investment Funds">Wise Investment Funds</option>
+							<option value="Witan Wealthbuilder">Witan Wealthbuilder</option>
+							<option value="Woolwich">Woolwich</option>
+							<option value="Zurich">Zurich</option>
+							<option value="capita">capita</option>
+							<option value="idealing.com">idealing.com</option>
+							<option value="its Henderson">its Henderson</option>
+						</select>
+						<label class="error"></label>
+					</div>
+				</div>
+				<div class="row form-row">
+					<div class="column column-label large-3 medium-3">
+						<label for="form_forename" class="required">Account reference</label>
+            <small class="notice-box" id="referenceHelp"></small>
+					</div>
+					<div class="column column-input large-9 medium-9">
+						<input type="text" id="isa_reference" name="isa_reference" required="required" autocomplete="off" maxlength="255" value="{{reference}}" />
+						<label class="error"> </label>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>How would you like to transfer your ISA?</legend>
+				<div id="investment-option-choice-box">
+					<div class="row form-row spacer-no-bottom" id="investment-select">
+						<div class="column column-input large-12 medium-12 spacer-no-bottom">
+							<p>
+								<input type="radio" id="isa_transfer_type_1" name="isa_transfer_type" required="required" value="1" aria-required="true">
+								<label for="isa_transfer_type_1" class="required"> Transfer ISA as is
+									<br> <small>All Stocks and cash will transfer unchanged.</small> </label>
+							</p>
+							<p>
+								<input type="radio" id="isa_transfer_type_2" name="isa_transfer_type" required="required" value="0" aria-required="true">
+								<label for="isa_transfer_type_2" class="required"> Sell funds and transfer as cash
+									<br> <small>Any contributions will be held as cash in your SIPP</small> </label>
+							</p>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<div class="divider"></div>
+			</div>
+			<div class="buttons">
+				<div class="row form-row">
+					<div class="column large-5 medium-6 small-4 large-offset-1 cancel"> &nbsp;
+            <a href="/" onclick="
+              document.getElementById('application-form').action='/';
+              document.getElementById('application-form').submit();
+              return false;
+              " class="cancel" id="application-back-button">Back</a>
+          </div>
+					<div class="column large-5 medium-6 small-8 end continue">
+						<button type="submit" class="submit" id="application-submit-button"> Check your details </button>
+					</div>
+				</div>
+			</div>
+		</div>
+</form>
+<script type="text/javascript">
+
+var urlParams = new URLSearchParams(window.location.search);
+var param_provider = urlParams.get('isa_provider');
+var param_type = urlParams.get('isa_transfer_type');
+
+document.getElementById("isa_provider").value = param_provider;
+// document.getElementById("isa_provider").blur();
+setCheckedValueOfRadioButtonGroup(document.forms['application-form'].isa_transfer_type, param_type);
+
+function setCheckedValueOfRadioButtonGroup(vRadioObj, vValue) {
+    //var radios = document.getElementsByName(vRadioObj.name);
+    var radios = document.forms['application-form'].isa_transfer_type;
+    for (var j = 0; j < vRadioObj.length; j++) {
+        if (vRadioObj[j].value == vValue) {
+            vRadioObj[j].checked = true;
+            break;
+        }
+    }
+}
+
+providerHint(document.getElementById("isa_provider").value);
+
+function providerHint(val){
+  console.log(val);
+  switch(val) {
+    case "Zurich":
+      document.getElementById("referenceHelp").innerHTML = "Zurich's references start with 'ZR' e.g. ZR0123456.";
+      break;
+    default:
+      document.getElementById("referenceHelp").innerHTML = "";
+  }
+}
+</script>
+<script type="text/javascript">
+  element = document.querySelector('#isa_provider')
+  accessibleAutocomplete.enhanceSelectElement({
+    selectElement: element,
+    displayMenu: 'overlay',
+    autoselect: false,
+    onConfirm: (val) => {
+      providerHint(val);
+    }
+  })
+</script>
