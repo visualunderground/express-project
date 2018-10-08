@@ -16,7 +16,7 @@
 						<label for="isa_provider" class="required">Provider</label>
 					</div>
 					<div class="column column-input large-9 medium-9">
-						<select name="isa_provider" id="isa_provider" required="required" onchange="providerHint(this);">
+						<select name="isa_provider" id="isa_provider" onchange="providerHint(this.value)">
 							<option value="">Select your provider...</option>
 							<option value="AA Saving">AA Saving</option>
 							<option value="AFH Independent Financial Services">AFH Independent Financial Services</option>
@@ -310,7 +310,6 @@ var param_provider = urlParams.get('isa_provider');
 var param_type = urlParams.get('isa_transfer_type');
 
 document.getElementById("isa_provider").value = param_provider;
-// document.getElementById("isa_provider").blur();
 setCheckedValueOfRadioButtonGroup(document.forms['application-form'].isa_transfer_type, param_type);
 
 function setCheckedValueOfRadioButtonGroup(vRadioObj, vValue) {
@@ -327,7 +326,6 @@ function setCheckedValueOfRadioButtonGroup(vRadioObj, vValue) {
 providerHint(document.getElementById("isa_provider").value);
 
 function providerHint(val){
-  console.log(val);
   switch(val) {
     case "Zurich":
       document.getElementById("referenceHelp").innerHTML = "Zurich's references start with 'ZR' e.g. ZR0123456.";
@@ -341,10 +339,16 @@ function providerHint(val){
   element = document.querySelector('#isa_provider')
   accessibleAutocomplete.enhanceSelectElement({
     selectElement: element,
+    defaultValue: '',
     displayMenu: 'overlay',
-    autoselect: false,
-    onConfirm: (val) => {
-      providerHint(val);
-    }
+    autoselect: false
   })
+
+  setTimeout(hackBind, 1000);
+  function hackBind(){
+    var providerEl = document.getElementById("isa_provider");
+    document.addEventListener("keyup", function(){providerHint(providerEl.value)});
+    document.addEventListener("keydown", function(){providerHint(providerEl.value)});
+    document.addEventListener("click", function(){providerHint(providerEl.value)});
+  }
 </script>
