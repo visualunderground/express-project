@@ -51,6 +51,7 @@ table{width: 100%; border: none; margin-bottom: 40px;}
 .success {
   border: 1px solid #229418;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .success__header {
@@ -81,4 +82,13 @@ table{width: 100%; border: none; margin-bottom: 40px;}
 /* Hide stuff */
 #application-steps, #application-steps-mob {
   display: none;
+}
+/* Grid */
+.column-label, .column-input {
+  width: 100%;
+}
+
+form.application-form .column-label label {
+  padding-bottom:4px;
+  display: block;
 }
