@@ -49,7 +49,19 @@ table{width: 100%; border: none; margin-bottom: 40px;}
 }
 
 .success {
-  border: 1px solid green;
+  border: 1px solid #229418;
+  border-radius: 5px;
+}
+
+.success__header {
+  background-color: #229418;
+  color: #ffffff;
+  padding: -1.1em;
+}
+.success__header h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 1.1em;
 }
 
 .list-bullet {
@@ -65,4 +77,8 @@ table{width: 100%; border: none; margin-bottom: 40px;}
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
+}
+/* Hide stuff */
+#application-steps, #application-steps-mob {
+  display: none;
 }
